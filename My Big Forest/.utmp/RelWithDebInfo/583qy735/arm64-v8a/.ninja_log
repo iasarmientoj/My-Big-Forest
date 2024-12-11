@@ -1,10 +1,19 @@
 # ninja log v5
 93	3339	7554744815388543	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	b5b1d6c91f35976f
+144	3596	7554744818967249	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	889acec1a9c95ae7
 27	3456	7554744817430964	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	d6e02099a110cb4a
+2	3895	7554744821977343	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	f6733a0f73aae743
 105	3475	7554744817663681	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	ab974f2d36e029f2
 41	3477	7554744817693956	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	a0474028783fc158
-144	3596	7554744818967249	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	889acec1a9c95ae7
-2	3895	7554744821977343	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	f6733a0f73aae743
 74	4321	7554744826297287	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	1278630c574eea9e
 16	4531	7554744828409788	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	651e2587bbdb4556
 4531	4776	7554744830881132	C:/ProyIS/24.12.03 U My Big Forest/My Big Forest/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/583qy735/obj/arm64-v8a/libgame.so	ae76811bf20b513c
+14	4065	7556363915073595	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	d6e02099a110cb4a
+79	4171	7556363916039698	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	ab974f2d36e029f2
+64	4212	7556363916869826	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	b5b1d6c91f35976f
+50	4537	7556363919152574	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	a0474028783fc158
+27	4640	7556363921391295	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	f6733a0f73aae743
+108	4724	7556363922123725	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	889acec1a9c95ae7
+91	5472	7556363929742043	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	1278630c574eea9e
+40	5788	7556363932899392	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	651e2587bbdb4556
+5789	6158	7556363936625333	C:/ProyIS/24.12.03 U My Big Forest/My Big Forest/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/583qy735/obj/arm64-v8a/libgame.so	ae76811bf20b513c
