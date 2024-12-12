@@ -2,10 +2,11 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using System.Collections;
+using System.Collections.Generic;
 
 public class LoadScene : MonoBehaviour
 {
-    [SerializeField] private Slider loadbar;
+    [SerializeField] private Image loadbar;
     [SerializeField] private int sceneIndex;
 
     AsyncOperation asyncOperation;
@@ -22,15 +23,15 @@ public class LoadScene : MonoBehaviour
         asyncOperation = SceneManager.LoadSceneAsync(sceneIndex);
         asyncOperation.allowSceneActivation = false;
 
-
+        loadbar.gameObject.GetComponent<Animator>().enabled = false;
 
         while (!asyncOperation.isDone)
         {
             float progress = Mathf.Clamp01(asyncOperation.progress / 0.9f);
-            Debug.Log(progress);
 
-            //loadbar.value = progress;
-            loadbar.value = Mathf.Lerp(barLimitDown, barLimitUp, progress /0.1f);
+            //loadbar.fillAmount = progress;
+            loadbar.fillAmount = Mathf.Lerp(barLimitDown, barLimitUp, progress );
+
 
             if (progress >= 0.9f)
             {
