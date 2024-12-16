@@ -8,4 +8,5 @@ Perfecto para partidas rápidas, ¡y con muchas sorpresas por descubrir mientras
 - Pantalla de carga
 - Solicitud y envío de notificaciones "locales" push up en Android y iOS [Tutorial](https://www.youtube.com/watch?v=ulCH0Cd4b_I)
 - Carga de juego asincrónica
+- Mantener música a través de las escenas
 - 
