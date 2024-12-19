@@ -5,14 +5,19 @@ using UnityEngine;
 public class CharacterMovementManager : MonoBehaviour
 {
     public VariableJoystick joystick;
-    public CharacterController controller;
-    public float movementSpeed;
+    public CharacterController characterController;
+    public float speed;
     public float rotationSpeed;
 
     public Canvas inputCanvas;
     public bool isJoystick;
 
     public Animator playerAnimator;
+
+
+    public new Transform camera;
+    public float gravity = -9.8f;
+
 
     private void Start()
     {
@@ -29,19 +34,50 @@ public class CharacterMovementManager : MonoBehaviour
     {
         if (isJoystick)
         {
-            var movementDirection = new Vector3(joystick.Direction.x, 0.0f, joystick.Direction.y);
-            controller.SimpleMove(movementDirection * movementSpeed);
+            float hor = joystick.Direction.x;
+            float ver = joystick.Direction.y;
+            Vector3 movement = Vector3.zero;
 
-            if (movementDirection.sqrMagnitude <= 0)
+
+            float movementSpeed = 0;
+
+            if (hor != 0 || ver != 0)
+            {
+                Vector3 forward = camera.forward;
+                forward.y = 0;
+                forward.Normalize();
+
+                Vector3 right = camera.right;
+                right.y = 0;
+                right.Normalize();
+
+
+                Vector3 direction = forward * ver + right * hor;
+                movementSpeed = Mathf.Clamp01(direction.magnitude);
+                direction.Normalize();
+
+                movement = direction * speed * movementSpeed * Time.deltaTime;
+
+                //para que el personaje gire en el sentido del movimiento
+                //transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(direction), 0.2f);
+                var targetDirection = Vector3.RotateTowards(characterController.transform.forward, direction, rotationSpeed * Time.deltaTime, 0.0f);
+                characterController.transform.rotation = Quaternion.LookRotation(targetDirection);
+
+
+                playerAnimator.SetBool("run", true);
+
+            }
+            else
             {
                 playerAnimator.SetBool("run", false);
-                return;
             }
 
-            playerAnimator.SetBool("run", true);
-            var targetDirection = Vector3.RotateTowards(controller.transform.forward, movementDirection, rotationSpeed * Time.deltaTime, 0.0f);
 
-            controller.transform.rotation = Quaternion.LookRotation(targetDirection);
+            movement.y += gravity * Time.deltaTime;
+
+            characterController.Move(movement);
+
+
 
         }
     }
