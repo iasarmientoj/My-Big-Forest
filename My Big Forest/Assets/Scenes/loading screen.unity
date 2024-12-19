@@ -834,7 +834,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   musicSource: {fileID: 1952334354}
   SFXSource: {fileID: 326105414}
-  background: {fileID: 8300000, guid: a9e16e2ce66bcad4cad2325ca93f3e64, type: 3}
+  background: {fileID: 8300000, guid: 8e2ed6cf4c7d91042a643f765aa6a84d, type: 3}
 --- !u!4 &822282649
 Transform:
   m_ObjectHideFlags: 0
@@ -1840,7 +1840,7 @@ AudioSource:
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
