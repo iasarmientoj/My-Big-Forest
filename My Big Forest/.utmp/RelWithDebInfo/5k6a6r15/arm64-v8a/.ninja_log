@@ -1,10 +1,19 @@
 # ninja log v5
 148	7055	7919448078728600	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	e843c4985fd8ab14
 119	7116	7919448078799758	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	2140a797b79ea74d
-35	7290	7919448081288783	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	137ed8d6f89e4a25
-198	7392	7919448082273435	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	7165b04bbad333ef
-63	7731	7919448085485860	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	285a958a42c5bd0f
 227	8492	7919448093398749	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	4850c1cf8511d1ce
+35	7290	7919448081288783	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	137ed8d6f89e4a25
+63	7731	7919448085485860	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	285a958a42c5bd0f
+198	7392	7919448082273435	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	7165b04bbad333ef
 90	8778	7919448096493344	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	fb88280205e7ecef
 2	9115	7919448099849711	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	c32f54cf0cd1e730
 9115	9492	7919448103726138	C:/ProyIS/24.12.03 U My Big Forest/My Big Forest/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/5k6a6r15/obj/arm64-v8a/libgame.so	34f9550913630a02
+143	4934	7919494091070181	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	e843c4985fd8ab14
+117	4943	7919494091184444	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	2140a797b79ea74d
+25	5019	7919494092032800	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	137ed8d6f89e4a25
+184	5067	7919494092581312	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	7165b04bbad333ef
+72	5169	7919494093564021	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	285a958a42c5bd0f
+94	5591	7919494097845070	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	fb88280205e7ecef
+216	5646	7919494098423613	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	4850c1cf8511d1ce
+48	5762	7919494099522083	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	c32f54cf0cd1e730
+5762	6016	7919494102058483	C:/ProyIS/24.12.03 U My Big Forest/My Big Forest/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/5k6a6r15/obj/arm64-v8a/libgame.so	34f9550913630a02
