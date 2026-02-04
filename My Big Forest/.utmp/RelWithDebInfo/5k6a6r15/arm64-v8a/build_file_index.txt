@@ -1,0 +1,2 @@
+C:\ProyIS\24.12.03 U My Big Forest\My Big Forest\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\cpp\CMakeLists.txt
+C:\ProyIS\24.12.03 U My Big Forest\My Big Forest\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\cpp\GameActivity\CMakeLists.txt
