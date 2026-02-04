@@ -4,25 +4,19 @@ using UnityEngine;
 public class GlobalAppComponentLoader : MonoBehaviour
 {
 
-    [SerializeField] private NotificationController notificationController;
     [SerializeField] private LoadScene loadScene;
-
     [SerializeField] private Animator animatorLoadBar;
-
-
 
     void Start()
     {
         //ejecutar 50% de animacion de barra de carga
         animatorLoadBar.SetTrigger("barStep0");
 
-        //solicitar permiso de notificaciones
-        StartCoroutine(RequestNotificationAfterAnimation());
-
-
+        //proceder con la animacion y carga
+        StartCoroutine(StepAfterAnimation());
     }
 
-    private IEnumerator RequestNotificationAfterAnimation()
+    private IEnumerator StepAfterAnimation()
     {
         // El nombre de la última animación (reemplázalo con el nombre de tu animación final)
         string lastAnimationName = "loading bar"; // Este es el nombre del último estado de la animación
@@ -33,17 +27,11 @@ public class GlobalAppComponentLoader : MonoBehaviour
             yield return null; // Espera el siguiente frame
         }
 
-        // La  animación ha terminado, ahora puedes proceder
-        notificationController.InitPushNotifications();
-        //notificacion de bienvenida para la primer vez que inicia la app
-        notificationController.SendNotificationMinutesBoth("Welcome to My Big Forest! 🌲", "Your forest adventure begins now! Get ready to grow, explore, and have fun!", 1);
-
-
+        // Ya no hay notificaciones, proceder directamente
         //ejecutar 75% de animacion de barra de carga
         animatorLoadBar.SetTrigger("barStep1");
 
         //cargar escena de juego
-        //ejecutar del 75% al 100% de la barra de carga mediante codigo
         StartCoroutine(LoadGameAfterAnimation());
     }
 
