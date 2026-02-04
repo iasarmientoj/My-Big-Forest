@@ -114,3 +114,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Collectible
   collectibleTag: Player
+  collectionSound: {fileID: 8300000, guid: e9aee66352b16904790c3614eeec7bbc, type: 3}
